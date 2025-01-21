@@ -1,4 +1,5 @@
 import { createAction } from '@reduxjs/toolkit'
+import { ResultValueType } from '../models/general-models'
 
 export enum SystemActionTypes {
   LOAD_TOKEN = 'LOAD_TOKEN',
@@ -9,7 +10,7 @@ export enum SystemActionTypes {
   RESET_STATE = 'RESET_STATE',
 }
 
-interface LoadToken { type: SystemActionTypes.LOAD_TOKEN, payload: string }
+interface LoadToken { type: SystemActionTypes.LOAD_TOKEN, payload: ResultValueType }
 interface SetCurrentPage { type: SystemActionTypes.SET_CURRENT_PAGE, payload: string }
 interface ToggleUserPanelState { type: SystemActionTypes.TOGGLE_USER_PANEL }
 interface CloseUserPanel { type: SystemActionTypes.CLOSE_USER_PROFILE }
@@ -24,7 +25,7 @@ export type SystemActions =
   | LogoutUser
   | ResetState
 
-export const loadToken = createAction<string>(SystemActionTypes.LOAD_TOKEN)
+export const loadToken = createAction<ResultValueType>(SystemActionTypes.LOAD_TOKEN)
 export const setCurrentPage = createAction<string>(SystemActionTypes.SET_CURRENT_PAGE)
 export const toggleUserPanelState = createAction(SystemActionTypes.TOGGLE_USER_PANEL)
 export const closeUserPanel = createAction(SystemActionTypes.CLOSE_USER_PROFILE)
