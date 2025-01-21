@@ -1,0 +1,47 @@
+[
+  { "movie_id": 1,
+    "movie_name" : "Avatar",
+    "release_date" : "12/18/2009",
+    "worldwide_gross" : "$2,783,918,982",
+    "production_budget" : "$425,000,000",
+    "movie_link" : "http://www.the-numbers.com/movie/Avatar#tab=summary",
+    "domestic_gross" : "$760,507,625",
+    "genre":["Action", "Adventure", "Sci-Fi"]
+  },
+  {"movie_id": 2,
+    "movie_name" : "Star Wars Ep. VII: The Force Awakens",
+    "release_date" : "12/18/2015",
+    "worldwide_gross" : "$2,058,662,225",
+    "production_budget" : "$306,000,000",
+    "movie_link" : "http://www.the-numbers.com/movie/Star-Wars-Ep-VII-The-Force-Awakens#tab=summary",
+    "domestic_gross" : "$936,662,225",
+    "genre":["Action", "Adventure", "Sci-Fi"]
+  },
+  { "movie_id": 3,
+    "movie_name" : "Pirates of the Caribbean: At World's End",
+    "release_date" : "5/24/2007",
+    "worldwide_gross" : "$963,420,425",
+    "production_budget" : "$300,000,000",
+    "movie_link" : "http://www.the-numbers.com/movie/Pirates-of-the-Caribbean-At-Worlds-End#tab=summary",
+    "domestic_gross" : "$309,420,425",
+    "genre":["Action", "Adventure", "Sci-Fi"]
+  },
+  { "movie_id": 4,
+    "movie_name" : "Spectre",
+    "release_date" : "11/6/2015",
+    "worldwide_gross" : "$879,620,923",
+    "production_budget" : "$300,000,000",
+    "movie_link" : "http://www.the-numbers.com/movie/Spectre#tab=summary",
+    "domestic_gross" : "$200,074,175",
+    "genre":["Action", "Adventure", "Thriller"]
+  },
+  { "movie_id": 5,
+    "movie_name" : "The Dark Knight Rises",
+    "release_date" : "7/20/2012",
+    "worldwide_gross" : "$1,084,439,099",
+    "production_budget" : "$275,000,000",
+    "movie_link" : "http://www.the-numbers.com/movie/Dark-Knight-Rises-The#tab=summary",
+    "domestic_gross" : "$448,139,099",
+    "genre":["Action", "Adventure", "Sci-Fi"]
+  }
+]
