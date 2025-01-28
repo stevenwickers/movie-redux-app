@@ -5,9 +5,9 @@ Movie Redux App is an example of a React application
 built with Vite that utilizes Redux for state management. 
 The application makes asynchronous calls to a Node.js 
 API server using Axios to retrieve data. Using Axio 
-properly will eliminate the need for middleware like 
-Redux Saga. To run this application, you will need to 
-download the [movie-node-server](https://github.com/stevenwickers/movie-node-server)!.
+properly will eliminate the need for middleware. To run 
+this application, you will need to 
+download the [movie-node-server](https://github.com/stevenwickers/movie-node-server).
 
 ## Runing the Applicaiton
 

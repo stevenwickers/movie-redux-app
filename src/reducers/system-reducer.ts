@@ -10,10 +10,10 @@ const initialState = {
 const reducer = (state = initialState, action: SystemActions ) => {
   switch(action.type) {
     case SystemActionTypes.LOAD_TOKEN:
-      const { data } = action.payload
+      const token = action.payload
       return {
         ...state,
-        token: data
+        token: token
       }
     case SystemActionTypes.SET_CURRENT_PAGE:
       return {
