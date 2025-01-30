@@ -1,8 +1,9 @@
 import { FC } from 'react'
 import { MovieType } from '../../../models/movie-models'
-import { ItemCardStyles, ItemUpperInfoStyles, BudgetTitleStyles, BudgetListItemAreaStyles, GenreCardStyles, LastRowStyles, LinkAreaStyles } from './ListingItem.styled'
+import { BudgetListItemAreaStyles, BudgetTitleStyles, GenreCardStyles, ItemCardStyles, ItemUpperInfoStyles, LastRowStyles, LinkAreaStyles } from './ListingItem.styled'
 import { useSelector } from 'react-redux'
 import * as Selectors from '../../../selectors'
+import { ThemeNames } from '../../../assets/themes'
 
 interface Props {
   item: MovieType
@@ -11,7 +12,7 @@ interface Props {
 const Index: FC<Props> = ({ item }) => {
   const themeName = useSelector(Selectors.selectTheme)
   return (
-    <ItemCardStyles themeName={themeName} id={'ItemCardStyles'}>
+    <ItemCardStyles isDarkTheme={themeName === ThemeNames.DARK} id={'ItemCardStyles'}>
       <ItemUpperInfoStyles>
         <GenreCardStyles>
           <div>Genre</div>

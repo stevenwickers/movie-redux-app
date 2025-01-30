@@ -10,13 +10,12 @@ export const LinkAreaStyles = styled.div`
     width: 90%;
 `
 
-export const ItemCardStyles = styled.div<{themeName: string}>`
+export const ItemCardStyles = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== 'isDarkTheme',
+})<{ isDarkTheme: boolean }>`
     border-radius: 15px;
     padding: 15px;
-    background: ${({ theme, themeName }) => themeName === ThemeNames.DARK
-    ? theme.commonColors.grayDark
-    : theme.commonColors.whiteDark};
-    
+    background: ${({ theme, isDarkTheme }) => isDarkTheme ? theme.commonColors.grayDark : theme.commonColors.whiteDark};
     color: ${({ theme }) => theme.colors.text}
     font-size: smaller;
 `

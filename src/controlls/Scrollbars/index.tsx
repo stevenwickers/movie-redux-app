@@ -1,5 +1,6 @@
 import { FC } from 'react'
 import { ScrollbarStyles } from './Scrollbars.styled'
+import { ThemeNames } from '../../assets/themes'
 
 interface Props {
   children: any
@@ -10,7 +11,7 @@ interface Props {
 const Scrollbars:FC<Props> = ({ children, controlHeight, themeName }) => {
 
   return (
-    <ScrollbarStyles id={'Scrollbars'} themeName={themeName} heightStyle={controlHeight}>
+    <ScrollbarStyles id={'Scrollbars'} isDarkTheme={themeName === ThemeNames.DARK} heightStyle={controlHeight}>
       {children}
     </ScrollbarStyles>
   )

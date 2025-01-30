@@ -1,7 +1,8 @@
 import styled from 'styled-components'
-import { ThemeNames } from '../../assets/themes'
 
-export const ScrollbarStyles = styled.div<{themeName: string, heightStyle: number | string}>`
+export const ScrollbarStyles = styled.div.withConfig({
+  shouldForwardProp: (prop) => prop !== 'isDarkTheme' && prop !== 'heightStyle',
+})<{isDarkTheme: boolean, heightStyle: number | string }>`
     height: ${props => typeof props.heightStyle === 'string' ? props.heightStyle : `${props.heightStyle}px`};
     margin: 20px;
     overflow-y: auto;
@@ -9,7 +10,7 @@ export const ScrollbarStyles = styled.div<{themeName: string, heightStyle: numbe
     &::-webkit-scrollbar-track {
         border: 1px solid ${({ theme }) => theme.commonColors.white }
         padding: 2px 0;
-        background-color: ${({ theme, themeName }) => themeName === ThemeNames.DARK
+        background-color: ${({ theme, isDarkTheme }) => isDarkTheme
     ? theme.commonColors.blueCadet
     : theme.commonColors.whiteDark
 }
